@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="main.css">
+<meta charset="utf-8">
+    
+    <title>IT Technologies - Rush B</title>
+    <h1>IT Technologies</h1>
+    
+    <p>The IT world is constantly evolving, and at an exponentially growing rate. The myriad of inventive and innovative technologies that make up the IT industry have been through many iterations to become what they are today. At the currents stages, some have proven to be remarkable and revolutionary, while others are seen as nothing more than expreimental novelties and gimmicks that have a dim future. We have selected a few very notable technologies within the IT world that we believe have made a tremendous inpact on our society, both socially and economically.</p>
+    
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    
+    <a href="index.html">Back to Index</a>
+
+</html>

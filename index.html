@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="main.css">
+<meta charset="utf-8">
+<title>Rush B - Intro to Information Technology Assignment 2</title>
+
+<body>
+
+    <h1>ASSIGNMENT 2: THE IT WORLD</h1>
+    
+    <h2>About Our Group</h2>
+    
+    <p>We are a bunch of guys who have a shared interest in IT, but you probably knew that much already. This group was formed by way of proximity and process of elimination. By that, we mean that we just met up with whoever was closest to each other, and then some. Each of us are different, with varying sets of skills and other interests that makes our group a mixed bag, but we believe that such diveresity will grant us flexibility and provide more perspectives throughout our journey. In any case, we hope to give it our best effort for our project and are excited to use this opportunity to not only show not only who we are, but what we are capable of.</p>
+    
+        
+    <h2>About Each of Us</h2>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    <button type="button" class="collapsible"><i>Name</i></button>
+    <div class="content">
+        <p><i>Insert Info Here</i></p>
+    </div>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    
+    <h2>Our Report</h2>
+    <p>Please click on one of the following links to read more about the diffrernt sections of our report.</p>
+    
+    <a href="industrydata.html">Industry Data Findings</a> <br>
+    <a href="itwork.html">IT Work - Interviewing an IT Professional</a> <br>
+    <a href="ittech.html">IT Technologies Research</a> <br>
+    <a href="project.html">Our Project Ideas and Proposals</a>
+    
+    <h2>Reflection</h2>
+    <p><i>[Insert Group Reflection HERE]</i></p>
+
+</body>
+
+</html>
